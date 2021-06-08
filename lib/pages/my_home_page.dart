@@ -51,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
           return false;
         }
       } else {
-        if (await _requestPermission(Permission.photos)) {
+        if (await _requestPermission(Permission.storage)) {
           directory = await getTemporaryDirectory();
         } else {
           return false;
